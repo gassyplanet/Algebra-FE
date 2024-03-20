@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selektroi HTML elemenata</title>
+  <style>
+    body{
+      color: #222;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: justify;
+      padding: 75px;
+    }
+    /* svi titles */
+    [title]{
+      text-decoration: underline solid red;
+    }
+    /* title sa specificnim nazivom */
+    [title="Prvi odlomak"]{
+      color: darkorange;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    /* jedna od rijeci odvojena razmakom */
+    [title~="odlomak"]{
+      text-transform: uppercase;
+    }
+    /* prefix */
+    [title^="odlomak"]{
+      font-style: italic; 
+    }
+    /* sadržava bilogdje */
+    [title*="odlomak"]{
+      color: darkgreen;
+    }
+    /* sufix */
+    [title$="odlomak"]{
+      color: darkorange;
+    }
+    [title|="odlomak"]{
+      font-family: 'Courier New', Courier, monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1 title="Naslov stranice">Lorem ipsum dolor</h1>
+  <h2>Lorem ipsum</h2>
+  <h3>Lorem ipsum dolor sit amet</h3> 
+
+  <p title="Prvi odlomak">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+    Quia temporibus sequi aspernatur. Distinctio recusandae 
+    beatae blanditiis eius ab quidem id rerum sequi ea ducimus 
+    ipsam, magnam sed officia asperiores provident eum accusamus 
+    quisquam deleniti amet! Qui optio nobis praesentium at 
+    explicabo nesciunt. Eaque labore nisi sed praesentium 
+    tenetur deserunt harum!
+  </p>
+  <p title="odlomak-2">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Autem accusamus numquam fugit rem quis officia ducimus 
+    eligendi laboriosam sapiente accusantium repellat, nulla 
+    dignissimos sequi laborum. Quod, voluptatum voluptatibus! 
+    Libero, reiciendis tenetur. Doloribus architecto alias 
+    natus optio repellat. Dolores rem fugiat reiciendis ab 
+    exercitationem, porro animi maxime repellat at dignissimos 
+    nihil numquam ex hic quaerat. Aliquid, architecto laborum? 
+    Dolorem voluptatibus vitae repudiandae sit voluptates 
+    distinctio. Perspiciatis iusto nemo est cupiditate 
+    voluptas fugiat perferendis officiis sunt consectetur. 
+    Et nesciunt nihil dolore cumque.
+  </p>
+  <p title="odlomak 3">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+    Quia temporibus sequi aspernatur. Distinctio recusandae 
+    beatae blanditiis eius ab quidem id rerum sequi ea ducimus 
+    ipsam, magnam sed officia asperiores provident eum accusamus 
+    quisquam deleniti amet!
+  </p>
+  <p title="odlomakbla">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+    Quia temporibus sequi aspernatur. Distinctio recusandae 
+    beatae blanditiis eius ab quidem id rerum sequi ea ducimus 
+    ipsam, magnam sed officia asperiores provident eum accusamus 
+    quisquam deleniti amet! Qui optio nobis praesentium at 
+    explicabo nesciunt. Eaque labore nisi sed praesentium 
+    tenetur deserunt harum!
+  </p>
+  <p>
+    Lorem ipsum dolor <strong>sit <span title="">amet</span> consectetur</strong> 
+    adipisicing elit. Alias in eum id accusantium? Aliquid 
+    nulla libero, fugiat sapiente dolorum velit repellat id 
+    mollitia voluptatibus facere ipsam quasi illo maiores 
+    voluptate accusantium nostrum quibusdam. Aliquam nostrum 
+    odit dolorum maiores quasi assumenda dolorem eum quisquam. 
+    sit optio. Veniam porro iusto corrupti impedit adipisci at, 
+    atque iure fugiat ullam magnam asperiores nulla, animi 
+    laborum. Provident ab repellendus molestiae, incidunt 
+    natus iure porro, culpa fugiat quod animi tenetur, nihil 
+    ullam. Aspernatur omnis officia vero, laudantium dolorem 
+    quibusdam quod laboriosam adipisci commodi asperiores 
+    nobis quidem. Aut id explicabo inventore illo possimus 
+    mollitia!
+  </p>
+</body>
+</html>
